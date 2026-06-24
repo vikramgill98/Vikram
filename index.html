@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Dreams Into Reality is a cinematic luxury automotive lifestyle experience built for ambition, discipline, Toronto nights, and the dream garage."
+    />
+    <meta name="theme-color" content="#030303" />
+    <title>Dreams Into Reality</title>
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="preconnect" href="https://images.pexels.com" />
+    <link rel="preconnect" href="https://cdn.pixabay.com" />
+    <link rel="preconnect" href="https://unpkg.com" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script defer src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script defer src="js/main.js"></script>
+  </head>
+  <body>
+    <canvas id="particles" aria-hidden="true"></canvas>
+
+    <div class="intro-screen" id="intro" aria-label="Opening scene">
+      <div class="intro-copy">
+        <p>Toronto after midnight</p>
+        <h1>DREAMS INTO REALITY</h1>
+        <p>The Life You Imagine Is Waiting On The Other Side Of Discipline</p>
+      </div>
+    </div>
+
+    <div class="scroll-meter" aria-hidden="true"><span></span></div>
+
+    <nav class="chapter-nav" aria-label="Chapter navigation">
+      <a href="#top" aria-label="Hero"></a>
+      <a href="#beginning" aria-label="The Beginning"></a>
+      <a href="#discipline" aria-label="Discipline"></a>
+      <a href="#toronto" aria-label="Toronto Nights"></a>
+      <a href="#garage" aria-label="Dream Garage"></a>
+      <a href="#future" aria-label="The Future"></a>
+      <a href="#finale" aria-label="Final Scene"></a>
+    </nav>
+
+    <div class="sound-dock" aria-label="Sound controls">
+      <button class="icon-button" type="button" data-audio="play" aria-label="Play ambience" title="Play ambience">
+        <i data-lucide="play"></i>
+      </button>
+      <button class="icon-button" type="button" data-audio="mute" aria-label="Mute" title="Mute">
+        <i data-lucide="volume-2"></i>
+      </button>
+      <label class="volume-control" aria-label="Volume">
+        <i data-lucide="sliders-horizontal"></i>
+        <input type="range" min="0" max="1" step="0.01" value="0.42" data-audio="volume" />
+      </label>
+    </div>
+
+    <main>
+      <header class="scene hero" id="top" data-chapter="Hero">
+        <video
+          class="scene-video"
+          autoplay
+          muted
+          loop
+          playsinline
+          poster="https://cdn.pixabay.com/video/2023/09/21/181537-866999852_tiny.jpg"
+          src="https://cdn.pixabay.com/video/2023/09/21/181537-866999852_large.mp4"
+        ></video>
+        <div class="light-sweep" aria-hidden="true"></div>
+        <div class="scene-content hero-content">
+          <p class="eyebrow">Luxury is built before it is seen</p>
+          <h1>DREAMS INTO REALITY</h1>
+          <p class="lead">A cinematic drive through ambition, discipline, Toronto nights, and the garage waiting on the other side.</p>
+          <div class="button-row">
+            <a class="button button-primary" href="#beginning">
+              <i data-lucide="gauge"></i>
+              <span>BEGIN THE DRIVE</span>
+            </a>
+            <a class="button button-secondary" href="#garage">
+              <i data-lucide="warehouse"></i>
+              <span>ENTER THE GARAGE</span>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <section
+        class="scene chapter lazy-bg"
+        id="beginning"
+        data-chapter="The Beginning"
+        data-bg="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=2400&q=82"
+      >
+        <div class="scene-content chapter-content">
+          <p class="eyebrow">Chapter 1</p>
+          <h2>The Beginning</h2>
+          <blockquote>&ldquo;Every dream starts with a decision.&rdquo;</blockquote>
+          <div class="micro-grid" aria-label="Beginning moments">
+            <span>4:47 AM</span>
+            <span>Open laptop</span>
+            <span>Notebook full</span>
+            <span>Vision locked</span>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="scene discipline lazy-bg"
+        id="discipline"
+        data-chapter="Discipline"
+        data-bg="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=2400&q=82"
+      >
+        <div class="scene-content discipline-content">
+          <p class="eyebrow">Chapter 2</p>
+          <h2>Discipline</h2>
+          <div class="counter-grid">
+            <div class="counter" data-target="365" data-suffix="">
+              <strong>0</strong>
+              <span>Days Of Consistency</span>
+            </div>
+            <div class="counter" data-target="1000" data-suffix="+">
+              <strong>0</strong>
+              <span>Hours Of Work</span>
+            </div>
+            <div class="counter" data-target="0" data-suffix="">
+              <strong>0</strong>
+              <span>Excuses</span>
+            </div>
+          </div>
+        </div>
+        <div class="word-cloud" aria-hidden="true">
+          <span>DISCIPLINE</span>
+          <span>FOCUS</span>
+          <span>CONSISTENCY</span>
+          <span>SACRIFICE</span>
+        </div>
+      </section>
+
+      <section class="scene toronto" id="toronto" data-chapter="Toronto Nights">
+        <video
+          class="scene-video lazy-video"
+          muted
+          loop
+          playsinline
+          poster="https://cdn.pixabay.com/video/2020/06/22/42825-433896258_tiny.jpg"
+          data-src="https://cdn.pixabay.com/video/2020/06/22/42825-433896258_large.mp4"
+        ></video>
+        <div class="rain-layer" aria-hidden="true"></div>
+        <div class="scene-content chapter-content align-right">
+          <p class="eyebrow">Chapter 3</p>
+          <h2>Toronto Nights</h2>
+          <blockquote>&ldquo;The city never sleeps. Neither do dreamers.&rdquo;</blockquote>
+          <div class="micro-grid city-grid" aria-label="Toronto scenes">
+            <span>CN Tower</span>
+            <span>Bay Street</span>
+            <span>Glass towers</span>
+            <span>Rain reflections</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="garage-title scene" id="garage" data-chapter="Dream Garage">
+        <div class="scene-content garage-title-content">
+          <p class="eyebrow">Chapter 4</p>
+          <h2>Dream Garage</h2>
+          <p class="lead">No thumbnails. No gallery. One machine. One screen. One reason to keep building.</p>
+        </div>
+      </section>
+
+      <section class="vehicle lazy-bg" data-chapter="Ferrari" data-bg="https://images.unsplash.com/photo-1606220838315-056192d5e927?auto=format&fit=crop&w=2400&q=82">
+        <div class="vehicle-content">
+          <p class="eyebrow">Ferrari</p>
+          <h2>Speed With A Signature</h2>
+          <blockquote>&ldquo;Precision turns pressure into power.&rdquo;</blockquote>
+        </div>
+      </section>
+
+      <section class="vehicle lazy-bg" data-chapter="Lamborghini" data-bg="https://images.pexels.com/photos/13980814/pexels-photo-13980814.jpeg?auto=compress&cs=tinysrgb&w=2400">
+        <div class="vehicle-content">
+          <p class="eyebrow">Lamborghini</p>
+          <h2>Arrive Like Thunder</h2>
+          <blockquote>&ldquo;The bold life answers to nobody.&rdquo;</blockquote>
+        </div>
+      </section>
+
+      <section class="vehicle lazy-bg" data-chapter="Nissan GTR" data-bg="https://images.pexels.com/photos/34277061/pexels-photo-34277061.jpeg?auto=compress&cs=tinysrgb&w=2400">
+        <div class="vehicle-content">
+          <p class="eyebrow">Nissan GTR</p>
+          <h2>Built In The Dark</h2>
+          <blockquote>&ldquo;Quiet work becomes impossible to ignore.&rdquo;</blockquote>
+        </div>
+      </section>
+
+      <section class="vehicle lazy-bg" data-chapter="Mercedes G63" data-bg="https://images.unsplash.com/photo-1623671228672-7f56ddea1e0b?auto=format&fit=crop&w=2400&q=82">
+        <div class="vehicle-content">
+          <p class="eyebrow">Mercedes G63</p>
+          <h2>Command The Entrance</h2>
+          <blockquote>&ldquo;Presence is earned long before arrival.&rdquo;</blockquote>
+        </div>
+      </section>
+
+      <section class="vehicle lazy-bg" data-chapter="McLaren" data-bg="https://images.pexels.com/photos/12568008/pexels-photo-12568008.jpeg?auto=compress&cs=tinysrgb&w=2400">
+        <div class="vehicle-content">
+          <p class="eyebrow">McLaren</p>
+          <h2>Chase The Horizon</h2>
+          <blockquote>&ldquo;Momentum belongs to the prepared.&rdquo;</blockquote>
+        </div>
+      </section>
+
+      <section class="vehicle lazy-bg" data-chapter="Rolls Royce" data-bg="https://images.unsplash.com/photo-1696233016084-30c8345d85ff?auto=format&fit=crop&w=2400&q=82">
+        <div class="vehicle-content">
+          <p class="eyebrow">Rolls Royce</p>
+          <h2>Silence With Weight</h2>
+          <blockquote>&ldquo;True luxury whispers because it does not need to prove itself.&rdquo;</blockquote>
+        </div>
+      </section>
+
+      <section
+        class="scene future lazy-bg"
+        id="future"
+        data-chapter="The Future"
+        data-bg="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=2400&q=82"
+      >
+        <div class="scene-content chapter-content">
+          <p class="eyebrow">Chapter 5</p>
+          <h2>The Future</h2>
+          <blockquote>&ldquo;The future belongs to those who build it.&rdquo;</blockquote>
+          <div class="micro-grid" aria-label="Future scenes">
+            <span>Modern mansion</span>
+            <span>Infinity pool</span>
+            <span>Exotic cars</span>
+            <span>Toronto skyline</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="motivation-wall scene" id="motivation" data-chapter="Motivation">
+        <div class="quote-stack" aria-label="Motivation wall">
+          <p>&ldquo;Discipline beats motivation.&rdquo;</p>
+          <p>&ldquo;Success leaves clues.&rdquo;</p>
+          <p>&ldquo;Small progress is still progress.&rdquo;</p>
+          <p>&ldquo;Dreams stay dreams until you act.&rdquo;</p>
+          <p>&ldquo;Winners keep showing up.&rdquo;</p>
+        </div>
+      </section>
+
+      <section
+        class="finale scene lazy-bg"
+        id="finale"
+        data-chapter="Final Scene"
+        data-bg="https://images.pexels.com/photos/12568008/pexels-photo-12568008.jpeg?auto=compress&cs=tinysrgb&w=2400"
+      >
+        <div class="garage-doors" aria-hidden="true">
+          <div class="garage-door garage-door-left"></div>
+          <div class="garage-door garage-door-right"></div>
+        </div>
+        <div class="scene-content finale-content">
+          <p>Dreams Stay Dreams Until You Act.</p>
+          <h2>Start Building Yours Today.</h2>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
